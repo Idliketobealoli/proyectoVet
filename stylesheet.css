@@ -1,0 +1,80 @@
+:root {
+    --main-color: #744e2b;
+    --accent-color: #e39e5c;
+    --background: #ba9572;
+    --background-lighter: #dccab9;
+    --background-lightest: #fbf1e6;
+
+    background-color: var(--background-lighter);
+    color: var(--main-color);
+}
+
+th {
+    border-bottom: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+}
+.striped td {
+    border-right: 1px solid var(--main-color);
+    padding: 5px;
+}
+.striped {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--main-color);
+}
+.striped tr:nth-child(even) {
+    background-color: var(--background-lightest);
+}
+.striped tr:nth-child(odd) {
+    background-color: white;
+}
+.centered {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+h1, h2, h3 {
+    color: var(--main-color);
+    font-style: italic;
+}
+div {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+.red {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+.blue {
+    color: dodgerblue;
+    font-weight: bold;
+    font-style: italic;
+}
+input.normal { border-color: var(--accent-color); }
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+input::placeholder {
+    color: var(--accent-color);
+}
+input {
+    border-color: var(--background);
+    background-color: var(--background-lightest);
+    color: var(--main-color);
+}
